@@ -9,7 +9,6 @@ function swap1(a, b) {
 
 // approch 2
 function swap2(a, b) {
-
     return [a, b] = [b, a];
 }
 
