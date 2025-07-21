@@ -1,14 +1,14 @@
 // Find Second Largest Element in Array (approch 2)
 /**
  *  Algorithm ->
- *  1. Traverse the array with largest and secondlargest as -1
+ *  1. Traverse the array with largest and secondlargest as -Infinity
  *  2. if a[i]>largest then secondlargest as largest and largest as arr[i]
  *  3. else if arr[i]<largest and arr[i]>secondlargest then secondlargest = arr[i]
  */
 
 
 function findSecondLargest2(arr) {
-    let largest = -1, secondLargest = -1;
+    let largest = -Infinity, secondLargest = -Infinity;
 
     for (let i = 0; i < arr.length; i++) {
         if (arr[i] > largest) {
